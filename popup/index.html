@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+    <style>
+body{
+    width: 600px;
+    height: 400px;
+    background-color: #334;
+    padding:10px;
+    color: #fff;
+}
+textarea{
+    background-color: #fff;
+    height: 380px;
+    width: 580px;
+    border-radius: 9px;
+}
+button{
+    width:50px;
+    background-color: red;
+}
+    </style>
+<h2>111 Things To Do</h2> 
+<form id="form" onsubmit="return false;">
+    <input style="position:absolute; top:80%; left:5%; width:40%;" type="text" id="userInput" />
+    <input style="position:absolute; top:50%; left:5%; width:40%;" type="submit" onclick="othername();" />
+</form>
+<script>function othername() {
+    var input = document.getElementById("userInput").value;
+    alert(input);
+}</script>
+
+  </body>
+</html>

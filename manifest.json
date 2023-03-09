@@ -1,0 +1,27 @@
+{
+
+    "manifest_version": 3,
+    "name": "111 Things To Do",
+    "version": "1.0",
+  
+    "description": "Adds a red border to all webpages matching mozilla.org.",
+  
+    "icons": {
+      "32": "icons/beast-32.png",
+      "48": "icons/border-48.png"
+    },
+    "action": {
+      "default_icon": "icons/border-48.png",
+      "default_title": "111 Things To Do",
+      "default_popup": "popup/index.html",
+      "browser_style": true
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["app.js"]
+      }
+    ]
+  
+  }
+  
